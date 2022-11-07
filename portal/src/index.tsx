@@ -1,19 +1,42 @@
 import React from 'react';
-import ReactDOM from 'react-dom/client';
-import './index.css';
-import App from './App';
-import reportWebVitals from './reportWebVitals';
+import ReactDOM from 'react-dom';
+import { HashRouter } from 'react-router-dom';
 
-const root = ReactDOM.createRoot(
-  document.getElementById('root') as HTMLElement
-);
-root.render(
-  <React.StrictMode>
-    <App />
-  </React.StrictMode>
-);
+import logo from '@assets/logo_mp.png';
+import GlobalStyle from '@styles/global';
+import '@styles/global.scss';
+import theme from '@styles/theme';
 
-// If you want to start measuring performance in your app, pass a function
-// to log results (for example: reportWebVitals(console.log))
-// or send to an analytics endpoint. Learn more: https://bit.ly/CRA-vitals
-reportWebVitals();
+import { headerRoutes, routes } from '@routes';
+
+import config from './config.json';
+import { ThemeProvider } from 'styled-components';
+
+import Package from './../package.json';
+import { CarrinhoProvider, MasterPageProvider, ModalProvider } from '@contexts';
+declare global {
+  interface Navigator {
+    // eslint-disable-next-line
+    msSaveBlob?: (blob: any, defaultName?: string) => boolean;
+  }
+}
+
+ReactDOM.render(
+  <HashRouter>
+    <ThemeProvider theme={theme}>
+      <CarrinhoProvider>
+        <ModalProvider>
+          <MasterPageProvider
+            headerRoutes={headerRoutes}
+            routes={routes}
+            logo={logo}
+            version={Package.version}
+            menuRoute={config.apiUrl + '/auth/menu'}
+          ></MasterPageProvider>
+        </ModalProvider>
+      </CarrinhoProvider>
+      <GlobalStyle />
+    </ThemeProvider>
+  </HashRouter>,
+  document.getElementById('root')
+);

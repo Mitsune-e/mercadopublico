@@ -1,46 +1,48 @@
-# Getting Started with Create React App
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+# Portal Web
 
-## Available Scripts
+## Pre-requisitos:
+* Node.js v16.16.0 [(Clique aqui para baixar)](https://nodejs.org/en/download/)
+Node.js é um interpretador (runtime envirioment) código aberto (open-source) de JavaScript utilizado para executar a aplicação.
+* Yarn v1.22.19 [(Clique aqui para baixar)](https://classic.yarnpkg.com/lang/en/docs/install/#windows-stable)
+Yarn é o gerenciador de pacotes utilizados no projeto
 
-In the project directory, you can run:
+## Execução da Aplicação
 
-### `yarn start`
+### Dev
+1. Executar o commando ``yarn`` para instalar as depedências
+ ```console
+ $ yarn
+ ```
+ 
+ 2. Executar o comando ``yarn start``
+ ```console
+ $ yarn start
+ ```
+ 3. Dentro de alguns minutos a aplicação irá abrir automaticamente no seu navegador padrão.
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+### Prod
+1. Caso necessário, configurar um ambiente novo no [``env.json``](https://git.inova.serpro.gov.br/equipe29/hackcompras/-/blob/main/portal/env.json)
 
-The page will reload if you make edits.\
-You will also see any lint errors in the console.
+2. Executar o commando ``yarn`` para instalar as depedências
+ ```console
+ $ yarn
+ ```
+ 
+ 3. Executar o comando ``yarn build``
+ ```console
+ $ yarn build
+ ```
+ 4. Selecionar o número de versão quando o script solicitar.
+ 5. Selecionar o ambiente desejado quando o  script solicitar.
+ 6. O script gera os arquivos na pasta especificada no [``env.json``](https://git.inova.serpro.gov.br/equipe29/hackcompras/-/blob/main/portal/env.json), campo ``dir``
+ 7. Publicar os arquivos gerados em um servidor web
 
-### `yarn test`
+### Publicar com a API do Projeto
+1. Seguir os [passos para iniciar](https://git.inova.serpro.gov.br/equipe29/hackcompras/-/blob/main/api/README.md) o serviço da API.
+2. Mover os arquivos gerados para a pasta ``./public``
+3. Acessar normalmente pelo localhost na porta configurada, ou pelo acesso externo caso tenha sido configurado no firewall.
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
-
-### `yarn build`
-
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
-
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
-
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `yarn eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
-
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
-
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
+### Videos do Projeto
+[clique aqui para visualizar o video de demostração](https://youtu.be/JGXjHtH6oVo)
+[clique aqui para visualizar o video do pitch](https://youtu.be/JGXjHtH6oVo)

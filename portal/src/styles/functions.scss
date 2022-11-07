@@ -1,0 +1,3 @@
+@function web-theme($key) {
+  @return map-get($web-theme-vars, $key);
+}
