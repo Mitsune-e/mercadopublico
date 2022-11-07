@@ -1,46 +1,40 @@
-# Getting Started with Create React App
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+# Servidor de Dados (API)
 
-## Available Scripts
+## Pre-requisitos:
+* Node.js v16.16.0 [(Clique aqui para baixar)](https://nodejs.org/en/download/)
+Node.js é um interpretador (runtime envirioment) código aberto (open-source) de JavaScript utilizado para executar a aplicação.
 
-In the project directory, you can run:
+## Execução da Aplicação
 
-### `yarn start`
+1.  Criar um arquivo dotenv `.env` na raiz de forma que fique `./.env` e popula-lo com os seguintes parâmetros conforme [`.env.exemplo`](https://git.inova.serpro.gov.br/equipe29/hackcompras/-/blob/main/api/.env.exemplo) :
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+```
+PORT=80
+DB_HOST=<<nome do host do banco sql>>
+DB_PORT=<<porta do host do banco sql>>
+DB_USER=<<usuário do banco sql>>
+DB_PASS=<<senha do banco sql>>
+DB_NAME=<<nome do banco sql>>
+SALT_ROUNDS=10
+TOKEN_KEY=12345
+```
 
-The page will reload if you make edits.\
-You will also see any lint errors in the console.
+2. Executar o commando ``npm install`` para instalar as depedências
+ ```console
+ $ npm install
+ ```
+ 
+ 3. Executar o comando ``npm start`` para iniciar a aplicação
+ ```console
+ $ yarn start
+ ```
+ 4. Dentro de alguns minutos a seguinte mensagem irá aparecer para sinalizar que a aplicação iniciou corretamente:
 
-### `yarn test`
+```
+$ Hi!! Port = <<valor do campo PORT no ,env>>
+```
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
-
-### `yarn build`
-
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
-
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
-
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `yarn eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
-
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
-
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
+### Videos do Projeto
+[clique aqui para visualizar o video de demostração](https://youtu.be/JGXjHtH6oVo)
+[clique aqui para visualizar o video do pitch](https://youtu.be/JGXjHtH6oVo)

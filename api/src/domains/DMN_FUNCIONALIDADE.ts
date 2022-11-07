@@ -1,0 +1,3 @@
+export const DMN_FUNCIONALIDADE = {
+  CARRINHO_LANCAR: 1
+}
