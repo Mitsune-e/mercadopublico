@@ -2,9 +2,12 @@ import React from 'react';
 import ReactDOM from 'react-dom';
 import { HashRouter } from 'react-router-dom';
 
+import '@styles/variables.css';
+
 import logo from '@assets/logo_mp.png';
+
 import GlobalStyle from '@styles/global';
-import '@styles/global.scss';
+// import '@styles/global.scss';
 import theme from '@styles/theme';
 
 import { headerRoutes, routes } from '@routes';
