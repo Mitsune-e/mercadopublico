@@ -1,6 +1,6 @@
 # Hackcompras
 
-
+Project for the "Hackathon Compras Governamentais" from Serpro it lasted 5 days (https://www.serpro.gov.br/menu/quem-somos/inovacao-aberta/hackserpro/hackathon-compras/#programa--o)
 
 # Pre-requisitos:
 * Node.js v16.16.0 [(Clique aqui para baixar)](https://nodejs.org/en/download/)
