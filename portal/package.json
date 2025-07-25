@@ -53,6 +53,10 @@
     },
     "scripts": {
         "start": "node build.js --env dev --skip-version-prompt && react-app-rewired start",
+        "ssl:linux": "export NODE_OPTIONS=--openssl-legacy-provider",
+        "start:linux": "yarn ssl:linux && yarn start",
+        "ssl:windows": "set NODE_OPTIONS=--openssl-legacy-provider",
+        "start:windows": "yarn ssl:windows && yarn start",
         "build": "node ./build.js",
         "test": "ts-node -P setupTests/tsconfig.json setupTests/index.ts && jest --detectOpenHandles --colors",
         "start:quick": "node ./build.js --env prod --skip-version-prompt && cd ./../api && npm start",
