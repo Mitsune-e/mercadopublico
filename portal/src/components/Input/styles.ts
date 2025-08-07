@@ -1,8 +1,8 @@
 import { darken, lighten } from "polished";
 import styled from "styled-components";
 
-export const Container = styled.div``;
-export const ShowPasswordContainer = styled.div`
+export const Container = styled.div<any>``;
+export const ShowPasswordContainer = styled.div<any>`
   position: absolute;
   right: 10px;
   top: 10px;

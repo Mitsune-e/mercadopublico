@@ -8,7 +8,7 @@ export const ModalContent = styled.div`
   border-radius: 5px;
 `;
 
-export const ModalMessage = styled.div`
+export const ModalMessage = styled.div<any>`
   padding: 30px;
 `;
 

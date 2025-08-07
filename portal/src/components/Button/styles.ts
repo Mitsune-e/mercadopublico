@@ -1,6 +1,6 @@
 import styled from "styled-components";
 
-export const Container = styled.button`
+export const Container = styled.button<any>`
   padding: 0;
   font-size: 14px;
   border-width: 0px;
@@ -79,7 +79,7 @@ export const Container = styled.button`
   }
 `;
 
-export const Content = styled.div`
+export const Content = styled.div<any>`
   display: flex;
   flex-direction: row;
 `;
@@ -103,7 +103,7 @@ export const Icon = styled.div<any>`
   `};
 `;
 
-export const Text = styled.div`
+export const Text = styled.div<any>`
   flex: 1;
   padding: 7px 20px;
 `;

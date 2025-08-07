@@ -5,13 +5,13 @@ interface IProps {
   height: number;
 }
 
-export const ControllerBox = styled.div<IProps>`
+export const ControllerBox = styled.div<any & IProps>`
   transition-duration: 0.5s;
   overflow: hidden;
   height: ${props => `${props.height}px`}
 `;
 
-export const ContaierBox = styled.div<IProps>`
+export const ContaierBox = styled.div<any & IProps>`
   transition-duration: 0.5s;
   position: relative;
   top: ${props => `-${props.height}px`}

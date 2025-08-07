@@ -17,7 +17,7 @@ export const Header = styled.div`
   margin-bottom: 10px;
 `;
 
-export const ButtonClose = styled.div`
+export const ButtonClose = styled.div<any>`
   padding: 10px;
 
   &:hover {

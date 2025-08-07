@@ -37,7 +37,7 @@ const PrimeiroAcessoActive: React.FC<any> = ({ onGoBack }) => {
       alert(resultado);
       onGoBack();
     } catch (e: any) {
-      setErros(e);
+      setErros(e.toString());
     }
   }
 

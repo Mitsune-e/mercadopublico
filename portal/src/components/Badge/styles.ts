@@ -1,6 +1,6 @@
 import styled from "styled-components";
 
-export const BadgeContainer = styled.div`
+export const BadgeContainer = styled.div<any>`
   padding: 5px 10px 3px;
   font-size: 14px;
   font-weight: bold;

@@ -1,4 +1,4 @@
 {
-  "apiUrl": "http://localhost",
+  "apiUrl": "http://localhost:8080",
   "appName": "hackathon2022"
 }

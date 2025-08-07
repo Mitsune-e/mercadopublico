@@ -1,6 +1,7 @@
 import React, { useCallback, useState } from 'react';
 import InputMaskField from 'react-input-mask';
-import NumberFormat from 'react-number-format';
+import { PatternFormat } from 'react-number-format';
+import { NumericFormat } from 'react-number-format';
 import { Row, Label, LabelPosition, ButtonType, Button } from '..';
 import { FaEye, FaEyeSlash } from 'react-icons/fa';
 import { ShowPasswordContainer } from './styles';
@@ -64,7 +65,7 @@ const Input: React.FC<IInputProps> = (props) => {
 
   function mountDate(value: any) {
     return (
-      <NumberFormat
+      <PatternFormat
         id={props.id}
         name={props.name}
         className={className}
@@ -82,7 +83,7 @@ const Input: React.FC<IInputProps> = (props) => {
 
   function mountPercent(value: any) {
     return (
-      <NumberFormat
+      <NumericFormat
         id={props.id}
         name={props.name}
         className={className}
@@ -106,7 +107,7 @@ const Input: React.FC<IInputProps> = (props) => {
 
   function mountMoney(value: any) {
     return (
-      <NumberFormat
+      <NumericFormat
         id={props.id}
         name={props.name}
         className={className}

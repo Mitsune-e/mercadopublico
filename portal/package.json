@@ -13,20 +13,17 @@
         "react-dom": "^17.0.1",
         "react-icons": "^3.11.0",
         "react-input-mask": "^2.0.4",
-        "react-number-format": "4.4.1",
-        "react-quill": "^1.3.5",
+        "react-number-format": "5.4.4",
         "react-router-dom": "^5.2.0",
-        "react-scripts": "^4.0.3",
+        "react-scripts": "^5.0.1",
         "react-tooltip": "^4.2.21",
-        "styled-components": "^5.2.1",
-        "styled-components-breakpoint": "^3.0.0-preview.20"
+        "styled-components": "^5.2.1"
     },
     "devDependencies": {
         "@testing-library/jest-dom": "^5.14.1",
         "@testing-library/react": "^9.3.2",
         "@testing-library/user-event": "^7.1.2",
-        "@types/jest": "^26.0.24",
-        "@types/lodash": "^4.14.165",
+        "@types/jest": "^27.0.0",
         "@types/node": "^12.0.0",
         "@types/react": "17.0.2",
         "@types/react-dom": "17.0.2",
@@ -52,6 +49,7 @@
         "es5-ext": "0.10.53"
     },
     "scripts": {
+        "setup": "nvm use 24.5.0",
         "start": "node build.js --env dev --skip-version-prompt && react-app-rewired start",
         "ssl:linux": "export NODE_OPTIONS=--openssl-legacy-provider",
         "start:linux": "yarn ssl:linux && yarn start",

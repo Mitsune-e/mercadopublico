@@ -1,7 +1,7 @@
 import styled from "styled-components";
 import { device } from "../../../../device";
 
-export const Info = styled.div`
+export const Info = styled.div<any>`
   position: relative;
   margin: 0 auto;
   overflow: hidden;
@@ -13,7 +13,7 @@ export const Info = styled.div`
   }
 `;
 
-export const MenuButton = styled.button`
+export const MenuButton = styled.button<any>`
   @media ${device.tablet} {
     display: none;
   }

@@ -27,21 +27,21 @@ export const NavbarHeader = styled.li`
   display: block;
 `;
 
-export const NavbarHeaderLogo = styled.img`
+export const NavbarHeaderLogo = styled.img<any>`
   width: 100%;
 `;
 
-export const NavbarHeaderSubLogo = styled.img`
+export const NavbarHeaderSubLogo = styled.img<any>`
   width: 100% !important;
 `;
 
-export const NavbarMenu = styled.ul`
+export const NavbarMenu = styled.ul<any>`
   list-style: none;
   margin: 0;
   padding: 0;
 `;
 
-export const NavbarMenuItem = styled.li`
+export const NavbarMenuItem = styled.li<any>`
   position: relative;
   display: block;
 `;
@@ -58,7 +58,7 @@ export const NavbarCloseButton = styled(Button) <any>`
   }
 `;
 
-export const Version = styled.div`
+export const Version = styled.div<any>`
   display: flex;
   justify-content: center;
   align-items: center;

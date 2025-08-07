@@ -5,7 +5,7 @@ export const Container = styled.div`
   flex-direction: column;
 `;
 
-export const Logo = styled.img`
+export const Logo = styled.img<any>`
   width: 80px;
   margin-bottom: 20px;
 `;

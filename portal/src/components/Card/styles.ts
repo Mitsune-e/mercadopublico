@@ -13,7 +13,7 @@ export const Subtitle = styled.p`
   fontSize: 12px;
 `;
 
-export const Img = styled.img`
+export const Img = styled.img<any>`
   width: 100%;
   max-width: 300px;
 `;

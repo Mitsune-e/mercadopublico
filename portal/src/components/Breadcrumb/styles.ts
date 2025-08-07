@@ -1,6 +1,6 @@
 import styled from "styled-components";
 
-export const Container = styled.ol`
+export const Container = styled.ol<any>`
   background-color: #e9ecef;
   font-size: 14px;
   border-radius: 12px;

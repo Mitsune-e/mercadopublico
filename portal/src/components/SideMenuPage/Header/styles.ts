@@ -2,7 +2,7 @@ import { Link } from 'react-router-dom';
 import styled from 'styled-components';
 import { lighten } from 'polished';
 
-export const Container = styled.div`
+export const Container = styled.div<any>`
   display: flex;
   flex-direction: row;
 
@@ -24,7 +24,7 @@ export const MenuButtonContainer = styled.div`
   }
 `;
 
-export const MenuButton = styled.button`
+export const MenuButton = styled.button<any>`>
   color: #fff;
 `;
 
@@ -52,7 +52,7 @@ export const PageTitle = styled.div`
   color: ${(props) => props.theme.colors.pageHeaderText};
 `;
 
-export const PageUser = styled.div`
+export const PageUser = styled.div<any>`
   display: flex;
   font-size: 10pt;
   color: #fff;

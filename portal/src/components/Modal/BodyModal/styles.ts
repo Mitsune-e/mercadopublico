@@ -19,7 +19,7 @@ export const Title = styled.h3`
   margin: 0px;
 `;
 
-export const ButtonClose = styled.div`
+export const ButtonClose = styled.div<any>`
   padding: 20px;
 
   &:hover {

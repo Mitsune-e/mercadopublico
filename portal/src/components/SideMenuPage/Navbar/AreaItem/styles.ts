@@ -1,7 +1,7 @@
 import styled from "styled-components";
 import { darken } from "polished";
 
-export const Container = styled.div`
+export const Container = styled.div<any>`
   display: flex;
   flex-direction: column;
   padding: 5px 15px;
@@ -18,7 +18,7 @@ export const Container = styled.div`
   }
 `;
 
-export const AreaButton = styled.div`
+export const AreaButton = styled.div<any>`
   display: flex;
   flex-direction: row;
 
@@ -29,7 +29,7 @@ export const AreaButton = styled.div`
   }
 `;
 
-export const Title = styled.div`
+export const Title = styled.div<any>`
   display: flex;
   flex: 1;
   align-items: center;
@@ -39,7 +39,7 @@ interface IconProps {
   position: "left" | "right";
 }
 
-export const Icon = styled.div<IconProps>`
+export const Icon = styled.div<any & IconProps>`
   display: flex;
   padding: 7px;
   border-radius: 3px;
@@ -48,7 +48,7 @@ export const Icon = styled.div<IconProps>`
   margin-right: ${(props) => (props.position === "left" ? "10px" : 0)};
 `;
 
-export const ChevronIcon = styled.div<IconProps>`
+export const ChevronIcon = styled.div<any & IconProps>`
   display: flex;
   padding: 7px;
   border-radius: 3px;
@@ -56,9 +56,9 @@ export const ChevronIcon = styled.div<IconProps>`
   margin-right: ${(props) => (props.position === "left" ? "10px" : 0)};
 `;
 
-export const Content = styled.div``;
+export const Content = styled.div<any>``;
 
-export const Tooltip = styled.div`
+export const Tooltip = styled.div<any>`
   align-self: center;
   color: ${(props) => props.color} !important;
 
