@@ -41,4 +41,5 @@ Cada uma das três camadas da aplicação possui instruções específicas, os a
 
 ### Videos do Projeto
 [clique aqui para visualizar o video de demostração](https://youtu.be/JGXjHtH6oVo)
+
 [clique aqui para visualizar o video do pitch](https://youtu.be/JGXjHtH6oVo)
