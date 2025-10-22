@@ -39,12 +39,6 @@ TOKEN_KEY=12345
 ### Execução passo-a-passo
 Cada uma das três camadas da aplicação possui instruções específicas, os arquivos ``README.md`` de cada camada possui as devidas instruções.
 
-### Camadas do Projeto
-1. "front-end" aplicação web (porta) feito com React. [(Visualizar)](https://git.inova.serpro.gov.br/equipe29/hackcompras/-/tree/main/portal)
-2. "back-end" servidor de dados (api) feito com Node.js. [(Visualizar)](https://git.inova.serpro.gov.br/equipe29/hackcompras/-/tree/main/api)
-Ambos escritos em [TypeScript](https://www.typescriptlang.org/)
-3. Banco de dados MSSQL. [(Visualizar)](https://git.inova.serpro.gov.br/equipe29/hackcompras/-/tree/main/modelodb)
-
 ### Videos do Projeto
 [clique aqui para visualizar o video de demostração](https://youtu.be/JGXjHtH6oVo)
 [clique aqui para visualizar o video do pitch](https://youtu.be/JGXjHtH6oVo)
