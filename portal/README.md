@@ -10,12 +10,12 @@ Yarn é o gerenciador de pacotes utilizados no projeto
 ## Execução da Aplicação
 
 ### Dev
-1. Executar o commando ``yarn`` para instalar as depedências
+1. Executar o commando ``npm`` para instalar as depedências
  ```console
  $ yarn
  ```
  
- 2. Executar o comando ``yarn start``
+ 2. Executar o comando ``npm start``
  ```console
  $ yarn start
  ```
@@ -24,18 +24,18 @@ Yarn é o gerenciador de pacotes utilizados no projeto
 ### Prod
 1. Caso necessário, configurar um ambiente novo no [``env.json``](https://git.inova.serpro.gov.br/equipe29/hackcompras/-/blob/main/portal/env.json)
 
-2. Executar o commando ``yarn`` para instalar as depedências
+2. Executar o commando ``npm`` para instalar as depedências
  ```console
  $ yarn
  ```
  
- 3. Executar o comando ``yarn build``
+ 3. Executar o comando ``npm build``
  ```console
- $ yarn build
+ $ npm build
  ```
  4. Selecionar o número de versão quando o script solicitar.
  5. Selecionar o ambiente desejado quando o  script solicitar.
- 6. O script gera os arquivos na pasta especificada no [``env.json``](https://git.inova.serpro.gov.br/equipe29/hackcompras/-/blob/main/portal/env.json), campo ``dir``
+ 6. O script gera os arquivos na pasta especificada no ``env.json`` campo ``dir``
  7. Publicar os arquivos gerados em um servidor web
 
 ### Publicar com a API do Projeto
@@ -44,5 +44,4 @@ Yarn é o gerenciador de pacotes utilizados no projeto
 3. Acessar normalmente pelo localhost na porta configurada, ou pelo acesso externo caso tenha sido configurado no firewall.
 
 ### Videos do Projeto
-[clique aqui para visualizar o video de demostração](https://youtu.be/JGXjHtH6oVo)
 [clique aqui para visualizar o video do pitch](https://youtu.be/JGXjHtH6oVo)

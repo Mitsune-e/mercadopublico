@@ -10,7 +10,7 @@ Yarn é o gerenciador de pacotes utilizados no projeto
 
 # Execução do Projeto
 
- 1. Criar um arquivo dotenv ``.env`` no diretório ``./api`` de forma que fique ``./api/.env`` e popula-lo com os seguintes parâmetros conforme [``.env.exemplo``](https://git.inova.serpro.gov.br/equipe29/hackcompras/-/blob/main/api/.env.exemplo) :
+ 1. Criar um arquivo dotenv ``.env`` no diretório ``./api`` de forma que fique ``./api/.env`` e popula-lo com os seguintes parâmetros conforme:
  ```dotenv
 PORT=80
 DB_HOST=<<nome do host do banco sql>>
@@ -21,17 +21,16 @@ DB_NAME=<<nome do banco sql>>
 SALT_ROUNDS=10
 TOKEN_KEY=12345
  ```
- 2. Restaurar o backup do banco de dados fornecido pela equipe ou criar um novo conforme os scripts, ambos localizados no diretório ``./modelodb``
- 
- 3. Navegar para o diretório ``./portal``
+
+ 2. Navegar para o diretório ``./portal``
  ```console
  $ cd ./portal
  ```
- 4. Executar o comando ``yarn start:prod``
+ 3. Executar o comando ``npm start:prod``
  ```console
- $ yarn start:prod
+ $ npm start:prod
  ```
- 5. O script irá baixar todas as dependências necessárias e compilar o projeto, ao final a seguinte mensagem irá aparecer para sinalizar que a aplicação iniciou corretamente:
+ 4. O script irá baixar todas as dependências necessárias e compilar o projeto, ao final a seguinte mensagem irá aparecer para sinalizar que a aplicação iniciou corretamente:
  ```console
  $ Hi!! Port = <<valor do campo PORT no ,env>>
  ```
@@ -40,6 +39,5 @@ TOKEN_KEY=12345
 Cada uma das três camadas da aplicação possui instruções específicas, os arquivos ``README.md`` de cada camada possui as devidas instruções.
 
 ### Videos do Projeto
-[clique aqui para visualizar o video de demostração](https://youtu.be/JGXjHtH6oVo)
 
 [clique aqui para visualizar o video do pitch](https://youtu.be/JGXjHtH6oVo)
