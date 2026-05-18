@@ -4,8 +4,9 @@
     "lib": [
       "ES6"
     ],
-    "module": "commonjs",
-    "moduleResolution": "node",
+    "module": "node16",
+    "moduleResolution": "node16",
+    "ignoreDeprecations": "6.0",
     "noEmitOnError": true,
     "noImplicitAny": true,
     "noImplicitReturns": true,

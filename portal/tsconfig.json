@@ -2,7 +2,7 @@
   "extends": "./tsconfig.paths.json",
   "compilerOptions": {
     "target": "esnext",
-    "module": "esnext",
+    "module": "Node16",
     "lib": [
       "esnext",
       "dom",
@@ -22,9 +22,10 @@
     "resolveJsonModule": true,
     "strictPropertyInitialization": false,
     "allowSyntheticDefaultImports": true,
-    "moduleResolution": "node",
+    "moduleResolution": "node16",
     "isolatedModules": true,
     "noEmit": true,
+    "ignoreDeprecations": "6.0",
     "baseUrl": ".",
     "strictNullChecks": false,
     "noImplicitAny": false,
